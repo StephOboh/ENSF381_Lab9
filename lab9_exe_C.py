@@ -15,7 +15,7 @@ import json
 def fetch_product_data(url):
     """
     - Args: url (str) -> The URL to fetch product data from.
-    - Returns: list -> List of products retrieved from the URL.
+    - Returns: list -> List of products retrieved from the URL OR None if there is an error fetching the data.
     """
     try:
         response = requests.get(url)
